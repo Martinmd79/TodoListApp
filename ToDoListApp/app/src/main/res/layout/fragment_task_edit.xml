@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskEditFragment"
+    android:orientation="vertical"
+    android:id="@+id/taskEditFragment">
+
+    <!-- Title for the fragment, can be modified -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Edit Task"
+        style="@style/HeaderTextStyle" />
+
+    <!-- Task Name Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editTaskName"
+            android:hint="Enter Name"
+            android:textStyle="italic"
+            style="@style/BodyTextStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Task Description Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editTaskDescription"
+            android:hint="Enter Description"
+            android:textStyle="italic"
+            style="@style/BodyTextStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save Task Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateTaskButton"
+        android:text="Update"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        style="@style/ButtonStyle" />
+
+    <!-- Delete Task Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteTaskButton"
+        android:text="Delete Task"
+        android:textColor="@color/red"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        style="@style/ButtonStyle" />
+
+</LinearLayout>

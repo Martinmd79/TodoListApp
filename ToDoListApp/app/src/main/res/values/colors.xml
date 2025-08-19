@@ -1,0 +1,9 @@
+<resources>
+    <color name="darkGray">#4D4D4D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="headerTextColor">#333333</color>
+    <color name="bodyTextColor">#666666</color>
+    <color name="backgroundLight">#F5F5F5</color>
+    <color name="red">#E2D10101</color>
+
+</resources>
